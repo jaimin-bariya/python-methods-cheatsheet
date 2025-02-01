@@ -22,7 +22,7 @@ Python's **dictionary** is a powerful data structure that stores key-value pairs
 
 ---
 
-## 📋 Dictionary Properties
+## 🗌 Dictionary Properties
 
 | **Property**     | **Description**                                                                   | **Example**                      |
 |-------------------|-----------------------------------------------------------------------------------|----------------------------------|
@@ -43,24 +43,89 @@ d['c'] = 3        # Adds a new key-value pair
 print(d)         # Output: {'a': 1, 'b': 2, 'c': 3}
 ```
 
-### Example 2: Using `get` and `setdefault`
+### Example 2: Using `clear()`
 ```python
-d = {'a': 1}
-print(d.get('b', 0))          # Output: 0 (default value)
-d.setdefault('b', 2)          # Adds 'b': 2 if 'b' does not exist
-print(d)                      # Output: {'a': 1, 'b': 2}
+d = {'x': 10, 'y': 20}
+d.clear()
+print(d)  # Output: {}
 ```
 
-### Example 3: Iterating Over a Dictionary
+### Example 3: Using `copy()`
+```python
+d = {'name': 'Alice'}
+copy_d = d.copy()
+copy_d['name'] = 'Bob'
+print(d)       # Output: {'name': 'Alice'}
+print(copy_d)  # Output: {'name': 'Bob'}
+```
+
+### Example 4: Using `fromkeys()`
+```python
+keys = ['name', 'age']
+d = dict.fromkeys(keys, 'N/A')
+print(d)  # Output: {'name': 'N/A', 'age': 'N/A'}
+```
+
+### Example 5: Using `get()`
+```python
+d = {'a': 1}
+print(d.get('b', 0))  # Output: 0
+```
+
+### Example 6: Using `items()`
+```python
+d = {'name': 'Alice', 'age': 30}
+for key, value in d.items():
+    print(key, value)
+# Output:
+# name Alice
+# age 30
+```
+
+### Example 7: Using `keys()`
+```python
+d = {'x': 10, 'y': 20}
+print(list(d.keys()))  # Output: ['x', 'y']
+```
+
+### Example 8: Using `pop()`
 ```python
 d = {'a': 1, 'b': 2}
-for key, value in d.items():
-    print(f"{key}: {value}")
-# Output:
-# a: 1
-# b: 2
+removed_value = d.pop('a', 'not found')
+print(removed_value)  # Output: 1
+print(d)              # Output: {'b': 2}
+```
+
+### Example 9: Using `popitem()`
+```python
+d = {'a': 1, 'b': 2}
+key, value = d.popitem()
+print(key, value)  # Output: ('b', 2)
+print(d)           # Output: {'a': 1}
+```
+
+### Example 10: Using `setdefault()`
+```python
+d = {'a': 1}
+d.setdefault('b', 2)
+print(d)  # Output: {'a': 1, 'b': 2}
+```
+
+### Example 11: Using `update()`
+```python
+d = {'a': 1}
+d.update({'b': 2, 'c': 3})
+print(d)  # Output: {'a': 1, 'b': 2, 'c': 3}
+```
+
+### Example 12: Using `values()`
+```python
+d = {'a': 1, 'b': 2}
+print(list(d.values()))  # Output: [1, 2]
 ```
 
 ---
 
 Continue exploring this repository for other data structures and their methods. 🚀
+
+
