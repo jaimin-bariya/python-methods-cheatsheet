@@ -28,7 +28,7 @@ Here are the most commonly used string methods:
 
 ---
 
-## 📋 String Properties
+## 🗌 String Properties
 
 | **Property**       | **Description**                                                               | **Example**                   |
 |---------------------|-------------------------------------------------------------------------------|-------------------------------|
@@ -72,6 +72,20 @@ joined = "-".join(parts)
 print(joined)         # Output: "a-b-c"
 ```
 
----
+### Example 5: Using `startswith()` and `replace()`
+```python
+text = "python programming"
+print(text.startswith("python"))  # Output: True
+print(text.replace("python", "Java"))  # Output: "Java programming"
+```
+
+### Example 6: Checking String Properties with `isalnum()` and `isdigit()`
+```python
+code = "abc123"
+print(code.isalnum())  # Output: True
+num_str = "12345"
+print(num_str.isdigit())  # Output: True
+```
+
 
 Strings are fundamental in Python, and mastering their methods and properties will make your code cleaner and more efficient. 🚀
