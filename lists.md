@@ -48,6 +48,47 @@ l.sort()       # [1, 2, 3, 4]
 l.reverse()    # [4, 3, 2, 1]
 ```
 
----
+### Example 3: Using `insert`
+```python
+l = [1, 2, 3]
+l.insert(1, "Hello")  # [1, 'Hello', 2, 3]
+```
+
+### Example 4: Using `remove`
+```python
+l = [1, 2, 3, 2]
+l.remove(2)  # [1, 3, 2]
+```
+
+### Example 5: Using `pop`
+```python
+l = [1, 2, 3]
+element = l.pop()  # element is 3, list becomes [1, 2]
+```
+
+### Example 6: Using `clear`
+```python
+l = [1, 2, 3]
+l.clear()  # list becomes []
+```
+
+### Example 7: Using `index`
+```python
+l = [1, 2, 3, 2]
+position = l.index(2)  # position is 1
+```
+
+### Example 8: Using `count`
+```python
+l = [1, 2, 2, 3, 2]
+count_of_2 = l.count(2)  # count_of_2 is 3
+```
+
+### Example 9: Using `copy`
+```python
+l = [1, 2, 3]
+copy_list = l.copy()  # copy_list is [1, 2, 3]
+```
 
 Continue exploring this repository for other data structures and their methods. 🚀
+
